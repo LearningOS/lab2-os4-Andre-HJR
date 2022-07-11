@@ -63,7 +63,7 @@ clean:
 	rm -rf ${DIR}
 
 docker:
-	docker run --rm -it -v ${PWD}:/mnt -w /mnt ${DOCKER_NAME} bash
+	docker run --rm -it -v D:\Files_Tree\Source_Files\EnvDev\test\lab2-os4-Andre-HJR:/mnt -w /mnt ${DOCKER_NAME} bash
 
 build_docker: 
 	docker build -t ${DOCKER_NAME} .
